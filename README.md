@@ -35,7 +35,8 @@ The application follows a modern cloud-native architecture deployed on AWS, ensu
 # 🏗️ Deployment Architecture Overview
 
 The following diagram illustrates the cloud infrastructure setup used in this project, leveraging multiple AWS services to ensure scalability, security, and performance.
-  <div item="center">
+<div item="center">
+
     ```
                                        ┌──────────────┐
                                        │    Client    │
@@ -76,9 +77,11 @@ The following diagram illustrates the cloud infrastructure setup used in this pr
                  │   Amplify      │  │   S3       │  │ Internet │  │ Security  │
                  │  (Next.js App) │  │ (Static)   │  │ Gateway  │  │  Groups   │
                  └───────────────┘   └────────────┘  └──────────┘  └───────────┘
-```
 
-  </div>
+    
+     
+</div>
+
 
 ## 🧩 Components Breakdown
 
