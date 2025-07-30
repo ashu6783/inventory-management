@@ -55,10 +55,10 @@ The following diagram illustrates the cloud infrastructure setup used in this pr
                           │  │  │  ┌──────────────┐            │  │
                           │  │  │  │   EC2 (Backend)│◄────┐    │  │
                           │  │  │  └──────┬─────────┘     │    │  │
-                          │  │  │         │               │    │  │
+                          │  │  │         │               │    │  │                               ----------------->>>>> AWS DEPLOYED ARCHITECTURE      
                           │  │  └─────────┼───────────────┘    │  │
                           │  │            │                    │  │
-                          │  │  ┌─────────▼─────────┐          │  │
+                          │  │  ┌─────────▼─────────┐          │  │                  
                           │  │  │  API Gateway      │          │  │
                           │  │  └─────────┬─────────┘          │  │
                           │  │            │                    │  │
