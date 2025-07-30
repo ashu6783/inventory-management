@@ -31,7 +31,12 @@
 
 The application follows a modern cloud-native architecture deployed on AWS, ensuring scalability, security, and high availability.
 
-```
+
+# 🏗️ Deployment Architecture Overview
+
+The following diagram illustrates the cloud infrastructure setup used in this project, leveraging multiple AWS services to ensure scalability, security, and performance.
+  <div item="center">
+    ```
                                        ┌──────────────┐
                                        │    Client    │
                                        └──────┬───────┘
@@ -73,10 +78,8 @@ The application follows a modern cloud-native architecture deployed on AWS, ensu
                  └───────────────┘   └────────────┘  └──────────┘  └───────────┘
 ```
 
-# 🏗️ Deployment Architecture Overview
+  </div>
 
-The following diagram illustrates the cloud infrastructure setup used in this project, leveraging multiple AWS services to ensure scalability, security, and performance.
-<img width="2162" height="1460" alt="image" src="https://github.com/user-attachments/assets/a79606b8-da6a-42dd-929c-bd10076db41d" />
 ## 🧩 Components Breakdown
 
 ### 1. **Client**
