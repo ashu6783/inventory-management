@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Project Banner](https://via.placeholder.com/800x200/1976d2/ffffff?text=Inventory+Management+Dashboard)
+![Project Banner](https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif)
 
 [![Next.js](https://img.shields.io/badge/Next.js-13+-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
@@ -67,17 +67,34 @@
 ### **Cloud Infrastructure (AWS)**
 <div align="left">
 
-<img src="https://img.shields.io/badge/AWS_EC2-FF9900?style=for-the-badge&logo=amazonec2&logoColor=white" alt="AWS EC2"/>
-<img src="https://img.shields.io/badge/AWS_RDS-527FFF?style=for-the-badge&logo=amazonrds&logoColor=white" alt="AWS RDS"/>
-<img src="https://img.shields.io/badge/AWS_S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white" alt="AWS S3"/>
-<img src="https://img.shields.io/badge/AWS_Amplify-FF9900?style=for-the-badge&logo=awsamplify&logoColor=white" alt="AWS Amplify"/>
-<img src="https://img.shields.io/badge/AWS_VPC-FF9900?style=for-the-badge&logo=amazonwebservices&logoColor=white" alt="AWS VPC"/>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS" width="60" height="60"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS Services" width="60" height="60"/>
+
+**Services Used:**
+- 🖥️ **EC2** - Elastic Compute Cloud for backend hosting
+- 🗄️ **RDS** - Relational Database Service for data storage  
+- 🪣 **S3** - Simple Storage Service for static assets
+- ⚡ **Amplify** - Frontend hosting and CI/CD
+- 🌐 **VPC** - Virtual Private Cloud for network isolation
+- 🔗 **API Gateway** - API management and routing
+
+</div>
+
+<div align="center">
+
+![AWS Architecture](https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif)
 
 </div>
 
 ---
 
 ## 🏗️ Architecture Overview
+
+<div align="center">
+
+![AWS Cloud Infrastructure](https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif)
+
+</div>
 
 The application follows a modern cloud-native architecture deployed on AWS, ensuring scalability, security, and high availability.
 
@@ -126,9 +143,16 @@ The application follows a modern cloud-native architecture deployed on AWS, ensu
 ### 🧩 Components Breakdown
 
 #### **1. Frontend Layer**
-- **AWS Amplify**: Hosts the Next.js application with automatic CI/CD
-- **Amazon S3**: Stores static assets, images, and file uploads
-- **CloudFront CDN**: Global content delivery for optimal performance
+- **🚀 AWS Amplify**: Hosts the Next.js application with automatic CI/CD
+- **🪣 Amazon S3**: 
+  ```
+  📁 S3 Bucket Structure:
+  ├── 🖼️ assets/images/
+  ├── 📄 documents/exports/
+  ├── 📊 reports/generated/
+  └── 🔧 config/app-settings/
+  ```
+- **⚡ CloudFront CDN**: Global content delivery for optimal performance
 
 #### **2. API Layer**
 - **Amazon API Gateway**: Manages and secures API endpoints
@@ -140,9 +164,17 @@ The application follows a modern cloud-native architecture deployed on AWS, ensu
 - **Security Groups**: Controls network access with firewall rules
 
 #### **4. Database Layer**
-- **Amazon RDS**: Managed relational database in private subnet
-- **Multi-AZ Deployment**: High availability and automatic failover
-- **Automated Backups**: Daily snapshots and point-in-time recovery
+- **🗄️ Amazon RDS**: Managed relational database in private subnet
+  ```
+  📊 Database Schema:
+  ├── 📦 inventory_items
+  ├── 👥 users  
+  ├── 🏷️ categories
+  ├── 📋 orders
+  └── 📊 analytics_logs
+  ```
+- **🔄 Multi-AZ Deployment**: High availability and automatic failover
+- **💾 Automated Backups**: Daily snapshots and point-in-time recovery
 
 #### **5. Network Security**
 - **VPC**: Isolated network environment
@@ -234,6 +266,12 @@ The application follows a modern cloud-native architecture deployed on AWS, ensu
 
 ### AWS Deployment Steps
 
+<div align="center">
+
+![AWS Deployment](https://media.giphy.com/media/l41lGvinEgARjB2HC/giphy.gif)
+
+</div>
+
 1. **Setup AWS Resources**
    ```bash
    # Create VPC and networking
@@ -260,10 +298,16 @@ The application follows a modern cloud-native architecture deployed on AWS, ensu
 
 3. **Deploy Frontend to Amplify**
    ```bash
-   # Connect GitHub repo to Amplify
-   # Configure build settings
-   # Deploy automatically on push
+   # Connect GitHub repo to Amplify Console
+   # Configure build settings in amplify.yml
+   # 🚀 Deploy automatically on git push
    ```
+
+<div align="center">
+
+![Deployment Success](https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif)
+
+</div>
 
 ---
 
@@ -283,10 +327,18 @@ The application follows a modern cloud-native architecture deployed on AWS, ensu
 - Error handling and loading states
 
 ### **AWS Cloud Benefits**
-- **Scalability**: Auto-scaling based on demand
-- **Security**: VPC isolation and security groups
-- **Reliability**: Multi-AZ deployments and backups
-- **Performance**: CloudFront CDN and optimized routing
+
+<div align="center">
+
+![Cloud Benefits](https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif)
+
+</div>
+
+- **🔄 Scalability**: Auto-scaling based on demand
+- **🔒 Security**: VPC isolation and security groups  
+- **🛡️ Reliability**: Multi-AZ deployments and backups
+- **⚡ Performance**: CloudFront CDN and optimized routing
+- **💰 Cost-Effective**: Pay-as-you-use pricing model
 
 ---
 
