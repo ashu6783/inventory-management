@@ -1,13 +1,11 @@
-import React from 'react'
+import React from "react";
 
 type HeaderProps = {
-    name:string;
-}
+  name: string;
+};
 
-const Header = ({name}: HeaderProps) => {
-  return (
-    <div className='text-2xl font-semibold text-gray-700'>{name}</div>
-  )
-}
+const Header = ({ name }: HeaderProps) => {
+  return <div className="text-2xl font-semibold text-gray-700">{name}</div>;
+};
 
-export default Header
+export default Header;

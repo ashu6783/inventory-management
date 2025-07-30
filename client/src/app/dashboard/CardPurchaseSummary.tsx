@@ -12,7 +12,6 @@ import {
   YAxis,
 } from "recharts";
 
-
 const CardPurchaseSummary = () => {
   const { data, isLoading } = useGetDashboardMetricsQuery();
   const purchaseData = data?.purchaseSummary || [];

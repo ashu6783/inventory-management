@@ -1,6 +1,9 @@
 "use client";
 
-import { ExpenseByCategorySummary, useGetExpensesByCategoryQuery } from "../state/api";
+import {
+  ExpenseByCategorySummary,
+  useGetExpensesByCategoryQuery,
+} from "../state/api";
 import { useMemo, useState } from "react";
 import Header from "@/app/(components)/Header";
 import {
@@ -57,7 +60,7 @@ const Expenses = () => {
         if (!acc[data.category]) {
           acc[data.category] = { name: data.category, amount: 0 };
           acc[data.category].color = `#${Math.floor(
-            Math.random() * 16777215
+            Math.random() * 16777215,
           ).toString(16)}`;
           acc[data.category].amount += amount;
         }
@@ -170,7 +173,7 @@ const Expenses = () => {
                         index === activeIndex ? "rgb(29, 78, 216)" : entry.color
                       }
                     />
-                  )
+                  ),
                 )}
               </Pie>
               <Tooltip />
